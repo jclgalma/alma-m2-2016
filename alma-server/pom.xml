@@ -15,15 +15,25 @@
     </parent>
 
     <dependencies>
-        <dependency>
+        
+		<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	
     </dependencies>
 
     <properties>
         <java.version>1.8</java.version>
 	<docker.image.prefix>jclgalma</docker.image.prefix>
+
+
     </properties>
 
 
@@ -54,6 +64,7 @@
                         <configuration>
                             <image>jclgalma/alma-server:${project.version}</image>
                             <newName>hub.docker.com/jclgalma/alma-server:${project.version}</newName>
+
                         </configuration>
                     </execution>
                 </executions>
