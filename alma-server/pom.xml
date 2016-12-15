@@ -31,6 +31,7 @@
 
     <properties>
         <java.version>1.8</java.version>
+
 	<docker.image.prefix>jclgalma</docker.image.prefix>
 
 
@@ -62,6 +63,7 @@
                             <goal>tag</goal>
                         </goals>
                         <configuration>
+
                             <image>jclgalma/alma-server:${project.version}</image>
                             <newName>hub.docker.com/jclgalma/alma-server:${project.version}</newName>
 
