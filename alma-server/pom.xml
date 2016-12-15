@@ -23,7 +23,7 @@
 
     <properties>
         <java.version>1.8</java.version>
-	<docker.image.prefix>jcglalma</docker.image.prefix>
+	<docker.image.prefix>jclgalma</docker.image.prefix>
     </properties>
 
 
@@ -52,8 +52,8 @@
                             <goal>tag</goal>
                         </goals>
                         <configuration>
-                            <image>jcglalma/alma-server:${project.version}</image>
-                            <newName>hub.docker.com/jcglalma/alma-server:${project.version}</newName>
+                            <image>jclgalma/alma-server:${project.version}</image>
+                            <newName>hub.docker.com/jclgalma/alma-server:${project.version}</newName>
                         </configuration>
                     </execution>
                 </executions>
